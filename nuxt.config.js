@@ -66,7 +66,12 @@ export default {
             '/about-us/quality-control',
             '/about-us/our-history',
             '/about-us/social-responsibility',
-            '/about-us/affiliates'
+            '/about-us/affiliates',
+            '/media/event',
+            '/media/foodtalk',
+            '/media/video',
+            '/media/catalogues'
+
         ]
     },
 

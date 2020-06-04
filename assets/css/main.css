@@ -33,6 +33,7 @@
         .nav-div li {
             padding: 0 44px;
             /* margin: 0 88px 0 0; */
+            position: relative;
         }
         
         .nav-div li:first-child {
@@ -650,26 +651,50 @@
         
         .products-content-outer {}
         
-        .products-content-outer .middle {
+        .products-content-outer .middle,
+        .media-content-outer .middle,
+        .careers-content-outer .middle {
             display: block;
             width: 1280px;
             padding: 0 50px;
         }
         
-        .products-content-outer table {
+        .products-content-outer table,
+        .media-content-outer table,
+        .careers-content-outer table {
             width: 100%;
             margin: 0 0 200px 0;
         }
         
-        .products-content-outer table td {
+        .products-content-outer table td,
+        .media-content-outer table td,
+        .careers-content-outer table td {
             padding: 40px 0 0 0;
         }
         
-        .products-content-outer table td.left-col {
-            padding: 0 50px 0 0;
+        .products-content-outer table td.left-col,
+        .media-content-outer table td.left-col,
+        .careers-content-outer table td.left-col {
+            /* padding: 0 50px 0 0; */
+            vertical-align: top;
+            padding: 40px 50px 0 0;
         }
         
-        .products-content-outer table td.right-col {
+        .careers-content-outer table {
+            margin: 0;
+        }
+        
+        .media-content-outer table td {
+            position: relative;
+        }
+        
+        .media-content-outer table td.left-col {
+            width: 200px;
+        }
+        
+        .products-content-outer table td.right-col,
+        .media-content-outer table td.right-col,
+        .careers-content-outer table td.right-col {
             position: relative;
         }
         
@@ -685,6 +710,10 @@
             padding: 0;
             margin: 0;
             /* list-style-type: none; */
+        }
+        
+        ul.products-menu.media-menu>li {
+            margin: 0 0 10px 0;
         }
         
         .products-menu a {
@@ -1301,4 +1330,388 @@
             background: url(../images/filter-trash-icon.png) no-repeat #b79c6a;
             background-size: auto 47%;
             background-position: 10px center;
+        }
+        
+        .foodtalk-icon {
+            height: 19px;
+        }
+        
+        .left-menu-table {
+            padding: 0 !important;
+            margin: 0 0 10px 17px !important;
+            height: auto !important;
+            width: auto !important;
+        }
+        
+        .event-row-table {
+            padding: 0 !important;
+            margin: 0 0 0 0 !important;
+            height: auto !important;
+            width: auto !important;
+        }
+        
+        .left-menu-table td,
+        .event-row-table td {
+            vertical-align: top;
+            padding: 0 !important;
+            color: #B79D6A;
+        }
+        
+        .left-menu-table td ul {
+            list-style-type: none;
+            margin: 0 0 0 7px;
+        }
+        
+        .left-menu-table td ul li a.active {
+            font-weight: bold;
+        }
+        
+        .opacity-zero {
+            opacity: 0;
+        }
+        
+        .event-row-table .event-title {}
+        
+        .event-row-table .event-short-description {
+            color: #000;
+        }
+        
+        .event-row-table .more-dots {
+            color: #000;
+        }
+        
+        .event-row-table td {
+            padding: 10px !important;
+        }
+        
+        .event-row-table-a {
+            display: block;
+            /* border: 1px solid #000; */
+            border-radius: 20px;
+            padding: 10px;
+            margin: 0 0 10px 0;
+            position: relative;
+            transition: 0.2s all;
+        }
+        
+        .event-row-table-a:hover {
+            -webkit-box-shadow: 1px 1px 4px 3px rgba(0, 0, 0, 0.20);
+            box-shadow: 1px 1px 4px 3px rgba(0, 0, 0, 0.20);
+        }
+        
+        .event-row-table-a .read-more-txt {
+            position: absolute;
+            font-size: 15px;
+            right: 10px;
+            bottom: 10px;
+            display: none;
+            color: #B79D6A;
+        }
+        
+        .event-row-table-a:hover .read-more-txt {
+            display: block;
+        }
+        
+        .event-row-table-a .more-dots {
+            height: 11px;
+        }
+        
+        .event-detail-div .detail-description {
+            margin: 20px 0 0 0;
+        }
+        
+        .media-menu .left-menu-table {
+            display: none;
+        }
+        
+        .media-menu .left-menu-table.active {
+            display: block;
+        }
+        
+        .issue-name {
+            color: #B79D6A;
+        }
+        
+        .outstand-issue-icon {
+            height: 27px;
+        }
+        
+        .outstand-issue-icon-a {
+            float: right;
+            margin: 0 0 0 5px;
+        }
+        
+        .outstanding-version-div {
+            display: block;
+            padding: 20px;
+            -webkit-box-shadow: 1px 1px 4px 3px rgba(0, 0, 0, 0.20);
+            box-shadow: 1px 1px 4px 3px rgba(0, 0, 0, 0.20);
+            border-radius: 20px;
+        }
+        
+        .issue-left-col {
+            display: inline-block;
+            /* float: left; */
+        }
+        
+        .issue-right-col {
+            display: inline-block;
+            width: 680px;
+            padding: 0 0 0 20px;
+            vertical-align: top;
+            /* float: left; */
+        }
+        
+        .outstanding-version-div .book-cover-img {
+            margin: 10px 0 0 0;
+        }
+        
+        .foodtalk-icon-big {
+            height: 25px;
+        }
+        
+        .foodtalk-description {
+            margin: 20px 0 0 0;
+        }
+        
+        .issue-book-cover {
+            height: 200px;
+        }
+        
+        .issue-list-ul {
+            margin: 20px 0 0 0;
+        }
+        
+        .issue-list-ul li {
+            font-size: 12px;
+            color: #B79D6A;
+            margin: 0 0 20px 0;
+            display: inline-block;
+        }
+        
+        .issue-list-ul li a {
+            color: #B79D6A;
+        }
+        
+        .issue-list-ul li a .issue-book-cover {
+            margin: 5px 0 0 0;
+        }
+        
+        .video-play-btn {
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background: url(../images/video-play-icon.png) center center no-repeat;
+            background-size: 45px 45px;
+        }
+        
+        .video-play-div {
+            display: inline-block;
+            position: relative;
+        }
+        
+        .left-menu-table.catalogues {
+            margin: 0 0 0 30px !important;
+        }
+        
+        .left-menu-table.catalogues li {
+            font-size: 12px;
+        }
+        
+        .left-menu-table.catalogues ul {
+            margin: 5px 0 0 0;
+        }
+        
+        .edm-img-small-img {
+            height: 200px;
+        }
+        
+        .edm-img-big-img {
+            width: 500px;
+        }
+        
+        .edm-title {
+            font-size: 18px;
+            color: #B79D6A;
+        }
+        
+        .edm-date {
+            color: #DBDCDC;
+            font-size: 10px;
+        }
+        
+        .edm-short-description {
+            font-size: 13px;
+            color: #000;
+        }
+        
+        .enlarge-icon img {
+            height: 14px;
+        }
+        
+        .edm-detail-ul li {
+            display: inline-block;
+            vertical-align: top;
+        }
+        
+        .edm-detail-ul li.right-col {
+            padding: 0 0 0 20px;
+        }
+        
+        .media-content-outer table {
+            margin: 0;
+        }
+        
+        .careers-content-outer li,
+        .careers-content-outer li a {
+            color: #B79D6A;
+        }
+        
+        .careers-content-outer li.team-name {
+            display: block;
+            border-bottom: 1px #B79D6A solid;
+        }
+        
+        .careers-content-outer .team-list-ul {
+            display: inline-block;
+        }
+        
+        .careers-content-outer li {
+            margin: 0 0 5px 0
+        }
+        
+        .lightbox {
+            display: table;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 100;
+            /* display: none; */
+        }
+        
+        .lightbox .lightbox-content-div {
+            margin: auto;
+            position: absolute;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            text-align: center;
+            height: 85%;
+            width: 60%;
+            background: #fff;
+            /* background: url(../images/up-arrow.png) no-repeat; */
+            /* background-size: cover; */
+            top: 0;
+            bottom: 0;
+            /* border: 1px solid; */
+            border-radius: 20px;
+            -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.2);
+            -moz-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.2);
+        }
+        
+        a.close-lightbox-btn {
+            display: block;
+            width: 33px;
+            height: 33px;
+            background: url(../images/lightbox-close-btn.png) no-repeat;
+            background-size: cover;
+            position: absolute;
+            top: -16px;
+            right: -15px;
+            z-index: 100;
+        }
+        
+        a.close-lightbox-btn,
+        a.close-filter-btn {
+            display: block;
+            width: 33px;
+            height: 33px;
+            background: url(../images/lightbox-close-btn.png) no-repeat;
+            background-size: cover;
+            position: absolute;
+            top: -16px;
+            right: -15px;
+            z-index: 100;
+        }
+        
+        a.close-lightbox-btn:hover {
+            box-shadow: none;
+        }
+        
+        .careers.lightbox {
+            z-index: 500;
+        }
+        
+        .careers.lightbox .lightbox-content-div {
+            padding: 30px;
+        }
+        
+        .careers.lightbox .lightbox-content-div a {
+            color: #B79D6A;
+        }
+        
+        .careers.lightbox .lightbox-content-div .big-heading {
+            font-size: 18px;
+            text-align: left;
+        }
+        
+        .submenu {
+            position: absolute;
+            top: 36px;
+            left: -68px;
+            width: 300px;
+            /* background: #B79D6A; */
+            background: rgba(183, 157, 106, 0.85);
+            z-index: 300;
+            /* display: none; */
+            border-radius: 15px;
+        }
+        
+        .submenu.active {
+            /* display: block; */
+        }
+        
+        .submenu .tri {
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 15px 15px 15px;
+            border-color: transparent transparent rgba(183, 157, 106, 0.85) transparent;
+            left: 0;
+            right: 0;
+            position: absolute;
+            margin-left: auto;
+            margin-right: auto;
+            top: -15px;
+        }
+        
+        .submenu ul {
+            list-style-type: none;
+            padding: 10px 0 25px 0;
+            top: 0;
+            width: 80%;
+            margin: 0 auto;
+        }
+        
+        .submenu ul li {
+            border-bottom: 1px solid #fff;
+            font-size: 14px;
+            padding: 0;
+        }
+        
+        .submenu ul li a {
+            display: block;
+            padding: 5px;
+        }
+        
+        .submenu .cover {
+            display: block;
+            width: 100%;
+            height: 20px;
+            position: absolute;
+            top: -17px;
         }

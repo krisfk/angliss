@@ -35,7 +35,6 @@ export default {
     };
   },
   mounted: function() {
-    var slug = this.$route.params.about_info;
     var path_name_arr = [""];
     var path_url_arr = [];
 
@@ -65,10 +64,15 @@ export default {
         break;
       case "products":
         path_name_arr.push("Products");
+      case "media":
+        path_name_arr.push("Media");
         break;
     }
 
     this.path_slug_arr = path_slug_arr;
+
+    // var slug = this.$route.params.about_info;
+    var slug = path_slug_arr[path_slug_arr.length - 1];
 
     switch (slug) {
       case "who-are-we":
@@ -88,6 +92,25 @@ export default {
         break;
       case "affiliates":
         this.title = "Affiliates";
+        break;
+      case "event":
+        this.title = "Event";
+        break;
+      case "foodtalk":
+        this.title = "Foodtalk";
+        break;
+      case "video":
+        this.title = "Video";
+        break;
+      case "catalogues":
+        this.title = "Catalogues";
+        break;
+
+      case "edm":
+        this.title = "Edm";
+        break;
+      case "careers":
+        this.title = "Careers";
         break;
     }
 

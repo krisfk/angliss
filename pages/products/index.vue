@@ -168,43 +168,43 @@
                 </nuxt-link>
               </li>
               <li>
-                <nuxt-link to="javascript:void(0);">
+                <nuxt-link to="?c=1">
                   <img class="point-arrow" src="../../assets/images/product-menu-point.png" alt />
                   PASTRY & DAIRY
                 </nuxt-link>
               </li>
               <li>
-                <nuxt-link to="javascript:void(0);">
+                <nuxt-link to="?c=1">
                   <img class="point-arrow" src="../../assets/images/product-menu-point.png" alt />
                   CHEESE
                 </nuxt-link>
               </li>
               <li>
-                <nuxt-link to="javascript:void(0);">
+                <nuxt-link to="?c=1">
                   <img class="point-arrow" src="../../assets/images/product-menu-point.png" alt />
                   VEGETABLES
                 </nuxt-link>
               </li>
               <li>
-                <nuxt-link to="javascript:void(0);">
+                <nuxt-link to="?c=1">
                   <img class="point-arrow" src="../../assets/images/product-menu-point.png" alt />
                   DELI
                 </nuxt-link>
               </li>
               <li>
-                <nuxt-link to="javascript:void(0);">
+                <nuxt-link to="?c=1">
                   <img class="point-arrow" src="../../assets/images/product-menu-point.png" alt />
                   GROCERY
                 </nuxt-link>
               </li>
               <li>
-                <nuxt-link to="javascript:void(0);">
+                <nuxt-link to="?c=1">
                   <img class="point-arrow" src="../../assets/images/product-menu-point.png" alt />
                   ITALIAN SPECIALITY
                 </nuxt-link>
               </li>
               <li>
-                <nuxt-link to="javascript:void(0);">
+                <nuxt-link to="?c=1">
                   <img class="point-arrow" src="../../assets/images/product-menu-point.png" alt />
                   PROMOTIONAL ITEMS
                 </nuxt-link>
