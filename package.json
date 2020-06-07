@@ -12,12 +12,16 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.10.3",
+    "@nuxtjs/proxy": "^2.0.0",
     "bootstrap": "^4.1.3",
     "bootstrap-vue": "^2.15.0",
     "jquery": "^3.5.1",
     "nuxt": "^2.0.0",
     "vue-slick-carousel": "^1.0.5",
+    "vue2-google-maps": "^0.10.7",
     "vuebar": "0.0.20"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@nuxtjs/dotenv": "^1.4.1"
+  }
 }

@@ -28,7 +28,7 @@ export default {
     /*
      ** Plugins to load before mounting the App
      */
-    plugins: ["~/plugins/vuebar"],
+    plugins: ["~/plugins/vuebar", "@/plugins/google-maps"],
     /*
      ** Nuxt.js dev-modules
      */
@@ -36,13 +36,27 @@ export default {
     /*
      ** Nuxt.js modules
      */
+    env: {
+        VUE_APP_GOOGLE_MAPS_API_KEY: process.env.VUE_APP_GOOGLE_MAPS_API_KEY
+    },
     modules: [
         // Doc: https://bootstrap-vue.js.org
         "bootstrap-vue/nuxt",
-        "@nuxtjs/axios"
+        "@nuxtjs/axios",
+        "@nuxtjs/dotenv",
+        "@nuxtjs/proxy"
     ],
     axios: {
+        // baseURL: "http://angliss-layout.emo.com.hk/"
         // proxyHeaders: false
+    },
+    proxy: {
+        "/api": {
+            target: "http://angliss-layout.emo.com.hk/",
+            pathRewrite: {
+                "^/api": "/"
+            }
+        }
     },
     /*
      ** Build configuration
@@ -60,18 +74,19 @@ export default {
     },
     generate: {
         routes: [
-            '/about-us/',
-            '/about-us/who-are-we',
-            '/about-us/what-do-we-do',
-            '/about-us/quality-control',
-            '/about-us/our-history',
-            '/about-us/social-responsibility',
-            '/about-us/affiliates',
-            '/media/event',
-            '/media/foodtalk',
-            '/media/video',
-            '/media/catalogues'
-
+            "/about-us/",
+            "/about-us/who-are-we",
+            "/about-us/what-do-we-do",
+            "/about-us/quality-control",
+            "/about-us/our-history",
+            "/about-us/social-responsibility",
+            "/about-us/affiliates",
+            "/media/event",
+            "/media/foodtalk",
+            "/media/video",
+            "/media/catalogues",
+            "/contact-us/",
+            "/wishlist/"
         ]
     },
 

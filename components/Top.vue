@@ -9,22 +9,32 @@
 
         <ul class="right-icons float-right list-inline">
           <li class="d-inline-block">
-            <a href="javascript:void(0);" class="heart-icon d-inline-block"></a>
+            <nuxt-link
+              to="/wish-list"
+              class="heart-icon d-inline-block"
+            ></nuxt-link>
           </li>
           <li class="d-inline-block">
-            <a href="javascript:void(0);" class="search-icon d-inline-block"></a>
+            <nuxt-link
+              to="/products"
+              class="search-icon d-inline-block"
+            ></nuxt-link>
           </li>
         </ul>
       </div>
 
       <div class="nav-div text-center">
-        <ul class="list-inline d-table" @mouseleave="show_submenu=false">
+        <ul class="list-inline d-table" @mouseleave="show_submenu = false">
           <li class="d-inline-block align-bottom">
             <nuxt-link to="/">HOME</nuxt-link>
           </li>
           <li class="d-inline-block align-bottom">
             <!-- <a href="">ABOUT US</a> -->
-            <div class="submenu" v-show="show_submenu" @mouseleave="show_submenu=false">
+            <div
+              class="submenu"
+              v-show="show_submenu"
+              @mouseleave="show_submenu = false"
+            >
               <div class="cover"></div>
               <div class="tri"></div>
 
@@ -33,16 +43,22 @@
                   <nuxt-link to="/about-us/who-are-we">WHO ARE WE?</nuxt-link>
                 </li>
                 <li>
-                  <nuxt-link to="/about-us/what-do-we-do">WHAT DO WE DO & PROVIDE?</nuxt-link>
+                  <nuxt-link to="/about-us/what-do-we-do"
+                    >WHAT DO WE DO & PROVIDE?</nuxt-link
+                  >
                 </li>
                 <li>
-                  <nuxt-link to="/about-us/quality-control">QUALITY CONTROL</nuxt-link>
+                  <nuxt-link to="/about-us/quality-control"
+                    >QUALITY CONTROL</nuxt-link
+                  >
                 </li>
                 <li>
                   <nuxt-link to="/about-us/our-history">OUR HISTORY</nuxt-link>
                 </li>
                 <li>
-                  <nuxt-link to="/about-us/social-responsibility">SOCIAL RESPONSIBILITY</nuxt-link>
+                  <nuxt-link to="/about-us/social-responsibility"
+                    >SOCIAL RESPONSIBILITY</nuxt-link
+                  >
                 </li>
                 <li>
                   <nuxt-link to="/about-us/affiliates">AFFILIATES</nuxt-link>
@@ -53,30 +69,41 @@
               to="/about-us/who-are-we"
               class="about-us-link"
               @mouseenter.native="abc"
-            >ABOUT US</nuxt-link>
+              >ABOUT US</nuxt-link
+            >
           </li>
           <li class="d-inline-block align-bottom">
-            <nuxt-link to="/products" @mouseenter.native="show_submenu=false">PRODUCTS</nuxt-link>
+            <nuxt-link to="/products" @mouseenter.native="show_submenu = false"
+              >PRODUCTS</nuxt-link
+            >
           </li>
           <li class="d-inline-block align-bottom">
             <img class="logo" src="~assets/images/angliss-logo.png" alt />
           </li>
           <li class="d-inline-block align-bottom">
-            <nuxt-link to="/media/event" @mouseenter.native="show_submenu=false">MEDIA</nuxt-link>
+            <nuxt-link
+              to="/media/event"
+              @mouseenter.native="show_submenu = false"
+              >MEDIA</nuxt-link
+            >
           </li>
           <li class="d-inline-block align-bottom">
-            <nuxt-link to="/careers" @mouseenter.native="show_submenu=false">CAREERS</nuxt-link>
+            <nuxt-link to="/careers" @mouseenter.native="show_submenu = false"
+              >CAREERS</nuxt-link
+            >
           </li>
           <li class="d-inline-block align-bottom">
-            <nuxt-link to="#" @mouseenter.native="show_submenu=false">CONTACT US</nuxt-link>
+            <nuxt-link
+              to="/contact-us"
+              @mouseenter.native="show_submenu = false"
+              >CONTACT US</nuxt-link
+            >
           </li>
         </ul>
       </div>
     </div>
   </div>
 </template>
-
-
 
 <script>
 export default {
@@ -92,4 +119,3 @@ export default {
   }
 };
 </script>
-

@@ -3,7 +3,7 @@
     <div class="middle">
       <!-- (item, index) -->
 
-      <span v-for="(path, index)  in path_slug_arr" :key="path.id">
+      <span v-for="(path, index) in path_slug_arr" :key="path.id">
         <span v-if="index == 0">
           <nuxt-link to="../">
             <img class="house-icon" src="../assets/images/house-icon.png" alt />
@@ -11,9 +11,15 @@
         </span>
 
         <span v-if="index > 0">
-          <img class="breadcrumb-arrow-icon" src="../assets/images/breadcrumb-arrow.png" alt />
+          <img
+            class="breadcrumb-arrow-icon"
+            src="../assets/images/breadcrumb-arrow.png"
+            alt
+          />
 
-          <nuxt-link :to="'..'+path_url_arr[index]">{{path_name_arr[index]}}</nuxt-link>
+          <nuxt-link :to="'..' + path_url_arr[index]">{{
+            path_name_arr[index]
+          }}</nuxt-link>
         </span>
 
         <!-- <img class="breadcrumb-arrow-icon" src="../assets/images/breadcrumb-arrow.png" alt /> -->
@@ -66,6 +72,12 @@ export default {
         path_name_arr.push("Products");
       case "media":
         path_name_arr.push("Media");
+        break;
+      case "contact-us":
+        path_name_arr.push("Contact Us");
+        break;
+      case "wish-list":
+        path_name_arr.push("Wish List");
         break;
     }
 
@@ -125,5 +137,4 @@ export default {
 };
 </script>
 
-<style>
-</style>
+<style></style>
