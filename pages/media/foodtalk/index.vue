@@ -1,4 +1,3 @@
-
 <template>
   <div class="container">
     <Top />
@@ -38,21 +37,37 @@
                     </a>
                   </div>
                   <a href="#">
-                    <img class="book-cover-img" src="~/assets/images/issue-book-cover.jpg" alt />
+                    <img
+                      class="book-cover-img"
+                      src="~/assets/images/issue-book-cover.jpg"
+                      alt
+                    />
                   </a>
                 </div>
               </li>
               <li class="issue-right-col">
-                <img class="foodtalk-icon-big" src="~/assets/images/foodtalk-icon-big.png" alt />
-                <div
-                  class="foodtalk-description"
-                >Foodtalk is the quarterly, English-Chinese bilingual newsletter of Angliss Asia. It is a lifestyle-focused publication in a magazine format, bringing up-to-the-minute food and beverage industry trends, news and Angliss communication to clients and other stakeholders.</div>
+                <img
+                  class="foodtalk-icon-big"
+                  src="~/assets/images/foodtalk-icon-big.png"
+                  alt
+                />
+                <div class="foodtalk-description">
+                  Foodtalk is the quarterly, English-Chinese bilingual
+                  newsletter of Angliss Asia. It is a lifestyle-focused
+                  publication in a magazine format, bringing up-to-the-minute
+                  food and beverage industry trends, news and Angliss
+                  communication to clients and other stakeholders.
+                </div>
 
                 <ul class="list-inline issue-list-ul col-lg-12">
                   <li v-for="item in 6" :key="item.id" class="col-lg-4">
                     <a href="#">
                       <div>ISSUE 49</div>
-                      <img class="issue-book-cover" src="~/assets/images/issue-book-cover.jpg" alt />
+                      <img
+                        class="issue-book-cover"
+                        src="~/assets/images/issue-book-cover.jpg"
+                        alt
+                      />
                     </a>
                   </li>
                 </ul>
@@ -111,22 +126,6 @@ export default {
   mounted() {}
 };
 </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <style>
 .af-logo {
@@ -210,20 +209,5 @@ export default {
 
 .vb.vb-dragging-phantom > .vb-dragger > .vb-dragger-styler {
   background-color: rgba(200, 173, 105, 1);
-}
-
-.about-content-img {
-  background: url(../../../assets/images/about-section-img.jpg) no-repeat;
-  background-position: center center;
-  background-size: cover;
-  min-height: 51vh;
-  box-shadow: inset 0px 100px 20px -10px rgba(255, 255, 255, 1),
-    inset 0px -100px 20px -10px rgba(255, 255, 255, 1);
-
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
 }
 </style>

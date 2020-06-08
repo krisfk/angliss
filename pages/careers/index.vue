@@ -1,4 +1,3 @@
-
 <template>
   <div class="container">
     <Top />
@@ -6,32 +5,43 @@
 
     <div class="lightbox careers" v-show="show_lightbox">
       <div class="lightbox-content-div">
-        <a href="javascript:void(0);" class="close-lightbox-btn" @click="show_lightbox=false"></a>
+        <a
+          href="javascript:void(0);"
+          class="close-lightbox-btn"
+          @click="show_lightbox = false"
+        ></a>
         <div class="big-heading gold">SALES MANAGER</div>
         <div class="vuebar-element" v-bar>
           <div>
             Responsibility:
-            <br />．Customer Service Hotline Management
-            <br />．Effectively Placing, preparing and following up customers daily orders
-            <br />．Liaise and Maintain relationship with customer procurement team
-            <br />．Support Senior management with periodic reports
-            <br />．To effectively communicate latest information with relations to the departments'
-            <br />developments, order and inventory status, as well as other customer-relative issues with divisional members such as sales team and logistic
+            <br />．Customer Service Hotline Management <br />．Effectively
+            Placing, preparing and following up customers daily orders
+            <br />．Liaise and Maintain relationship with customer procurement
+            team <br />．Support Senior management with periodic reports
+            <br />．To effectively communicate latest information with relations
+            to the departments' <br />developments, order and inventory status,
+            as well as other customer-relative issues with divisional members
+            such as sales team and logistic
             <br />
-            <br />Requirement:
-            <br />．Strong Customer Service skills to keep a good liaison with existing and future clients.
-            <br />．Proactive, organized and forward thinking
-            <br />．Self motivated and able to work under pressure
-            <br />．Excellent interpersonal and communication skills in both English and Chinese.
-            <br />．Knowledge in food and food science is a plus
-            <br />．Good with MS Office and PC skills
-            <br />．2 years working experience or Undergraduate and fresh Graduate in business admin and related equivalent are welcome
+            <br />Requirement: <br />．Strong Customer Service skills to keep a
+            good liaison with existing and future clients. <br />．Proactive,
+            organized and forward thinking <br />．Self motivated and able to
+            work under pressure <br />．Excellent interpersonal and
+            communication skills in both English and Chinese. <br />．Knowledge
+            in food and food science is a plus <br />．Good with MS Office and
+            PC skills <br />．2 years working experience or Undergraduate and
+            fresh Graduate in business admin and related equivalent are welcome
             <br />
             <br />
             <span class="remark">
-              We offer competitive salary packages that include attractive target based commission, medical insurance, generous staff discount and more. Interested candidates please send your resume with salary expectation by email to:
+              We offer competitive salary packages that include attractive
+              target based commission, medical insurance, generous staff
+              discount and more. Interested candidates please send your resume
+              with salary expectation by email to:
               <br />Ms. Janice Cheung –
-              <a href="mailto:janice.c@angliss.com.mo">Janice.c@angliss.com.mo</a>
+              <a href="mailto:janice.c@angliss.com.mo"
+                >Janice.c@angliss.com.mo</a
+              >
             </span>
           </div>
         </div>
@@ -49,21 +59,35 @@
             <!-- <MediaMenu /> -->
           </td>
           <td class="right-col col-lg-12">
-            <ul v-for="item in 4" :key="item.id" class="team-list-ul list-inline col-lg-6">
+            <ul
+              v-for="item in 4"
+              :key="item.id"
+              class="team-list-ul list-inline col-lg-6"
+            >
               <li class="team-name">
-                <a href="javascript:void(0)" @click="show_lightbox=true">SALES TEAM</a>
+                <a href="javascript:void(0)" @click="show_lightbox = true"
+                  >SALES TEAM</a
+                >
               </li>
               <li>
-                <a href="javascript:void(0)" @click="show_lightbox=true">SALES MANAGER</a>
+                <a href="javascript:void(0)" @click="show_lightbox = true"
+                  >SALES MANAGER</a
+                >
               </li>
               <li>
-                <a href="javascript:void(0)" @click="show_lightbox=true">SALES SUPERVISOR</a>
+                <a href="javascript:void(0)" @click="show_lightbox = true"
+                  >SALES SUPERVISOR</a
+                >
               </li>
               <li>
-                <a href="javascript:void(0)" @click="show_lightbox=true">SALES EXECUTIVE</a>
+                <a href="javascript:void(0)" @click="show_lightbox = true"
+                  >SALES EXECUTIVE</a
+                >
               </li>
               <li>
-                <a href="javascript:void(0)" @click="show_lightbox=true">SALES TRAINEE</a>
+                <a href="javascript:void(0)" @click="show_lightbox = true"
+                  >SALES TRAINEE</a
+                >
               </li>
             </ul>
           </td>
@@ -133,27 +157,7 @@ export default {
 };
 </script>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <style scope>
-.af-logo {
-  /* width: 50%; */
-  width: 224px;
-}
 .vuebar-element {
   text-align: left;
 
@@ -171,7 +175,7 @@ export default {
 }
 
 .left-col .vuebar-element {
-  padding: 0 0 0 35px;
+  /* padding: 0 0 0 35px; */
 }
 .right-col .vuebar-element {
   /* padding: 0 35px 0 0; */
@@ -233,20 +237,5 @@ export default {
 
 .vb.vb-dragging-phantom > .vb-dragger > .vb-dragger-styler {
   background-color: rgba(200, 173, 105, 1);
-}
-
-.about-content-img {
-  background: url(~assets/images/about-section-img.jpg) no-repeat;
-  background-position: center center;
-  background-size: cover;
-  min-height: 51vh;
-  box-shadow: inset 0px 100px 20px -10px rgba(255, 255, 255, 1),
-    inset 0px -100px 20px -10px rgba(255, 255, 255, 1);
-
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
 }
 </style>

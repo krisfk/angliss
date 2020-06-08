@@ -1,4 +1,3 @@
-
 <template>
   <div class="container">
     <Top />
@@ -13,20 +12,31 @@
           <table>
             <tr>
               <td class="left-col img-col">
-                <div class="about-content-img"></div>
+                <div class="about-content-img">
+                  <img src="~/assets/images/about-section-img.jpg" alt="" />
+                </div>
               </td>
               <td class="right-col">
                 <div class="big-heading">Social Responsibility</div>
                 <div class="description">
-                  Angliss Macau is a branch of Angliss Hong Kong Food Service Ltd. One of the Asia Pacific Region Market Leaders on food import.
+                  Angliss Macau is a branch of Angliss Hong Kong Food Service
+                  Ltd. One of the Asia Pacific Region Market Leaders on food
+                  import.
                   <br />
-                  <br />Our everyday goal is to provide a wide choice of high quality, nutritious and well-balanced food to meet our client’s needs in Macau. To be our customers' most valued and trusted business partner.
+                  <br />Our everyday goal is to provide a wide choice of high
+                  quality, nutritious and well-balanced food to meet our
+                  client’s needs in Macau. To be our customers' most valued and
+                  trusted business partner.
                   <br />
-                  <br />We have the global reach and capability to achieve these goals and deliver world-class food and support services in the most efficient way, consistently, daily and, above all, with high quality and safely.
+                  <br />We have the global reach and capability to achieve these
+                  goals and deliver world-class food and support services in the
+                  most efficient way, consistently, daily and, above all, with
+                  high quality and safely.
                 </div>
               </td>
             </tr>
           </table>
+
           <nuxt-link to="./affiliates" class="down-arrow"></nuxt-link>
         </div>
       </div>
@@ -98,6 +108,11 @@ export default {
         ".about-content-outer,.about-content-div,.about-content-div table,.affiliates-container"
       ).height(slide_h);
       $(".vuebar-element").height(slide_h - 150);
+
+      $(
+        ".mobile .about-content-outer,.mobile .about-content-div,.mobile .about-content-div table,.mobile .affiliates-container"
+      ).css({ height: "auto" });
+      $(".mobile .vuebar-element").css({ height: "auto" });
     }
 
     adjust_slide_height();
@@ -121,27 +136,7 @@ export default {
 // Affiliates
 </script>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <style>
-.af-logo {
-  /* width: 50%; */
-  width: 224px;
-}
 .vuebar-element {
   /* height: 250px; */
   /* width: 100%; */
@@ -159,6 +154,7 @@ export default {
 
 .left-col .vuebar-element {
   padding: 0 0 0 35px;
+  /* height: auto !important; */
 }
 .right-col .vuebar-element {
   /* padding: 0 35px 0 0; */
@@ -169,6 +165,7 @@ export default {
   width: 12px;
   left: 0;
 }
+
 /* .left-col .vuebar-element .vb > .vb-dragger {
   z-index: 5;
   width: 12px;
@@ -219,20 +216,5 @@ export default {
 
 .vb.vb-dragging-phantom > .vb-dragger > .vb-dragger-styler {
   background-color: rgba(200, 173, 105, 1);
-}
-
-.about-content-img {
-  background: url(~assets/images/about-section-img.jpg) no-repeat;
-  background-position: center center;
-  background-size: cover;
-  min-height: 51vh;
-  box-shadow: inset 0px 100px 20px -10px rgba(255, 255, 255, 1),
-    inset 0px -100px 20px -10px rgba(255, 255, 255, 1);
-
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
 }
 </style>

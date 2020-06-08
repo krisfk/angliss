@@ -1,4 +1,3 @@
-
 <template>
   <div class="container">
     <Top />
@@ -20,7 +19,11 @@
                 <nuxt-link to="#" class="event-row-table-a">
                   <span class="read-more-txt">
                     <!-- <img class="more-dots" src="~assets/images/more-dots.png" alt /> -->
-                    <img class="more-dots" src="~assets/images/play-icon.png" alt />
+                    <img
+                      class="more-dots"
+                      src="~assets/images/play-icon.png"
+                      alt
+                    />
                     PLAY
                   </span>
                   <table class="event-row-table">
@@ -32,10 +35,14 @@
                         </div>
                       </td>
                       <td>
-                        <div class="event-title">GALAXY MACAU 8TH ANNIVERSARY WITH WCF</div>
-                        <div
-                          class="event-short-description"
-                        >Angliss Macau is a branch of Angliss Hong Kong Food Service Ltd. One of the Asia Pacific Region Market Leaders on food import.</div>
+                        <div class="event-title">
+                          GALAXY MACAU 8TH ANNIVERSARY WITH WCF
+                        </div>
+                        <div class="event-short-description">
+                          Angliss Macau is a branch of Angliss Hong Kong Food
+                          Service Ltd. One of the Asia Pacific Region Market
+                          Leaders on food import.
+                        </div>
                         <div class="more-dots">⋯⋯</div>
                       </td>
                     </tr>
@@ -85,22 +92,6 @@ export default {
   mounted() {}
 };
 </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <style>
 .af-logo {
@@ -184,20 +175,5 @@ export default {
 
 .vb.vb-dragging-phantom > .vb-dragger > .vb-dragger-styler {
   background-color: rgba(200, 173, 105, 1);
-}
-
-.about-content-img {
-  background: url(~assets/images/about-section-img.jpg) no-repeat;
-  background-position: center center;
-  background-size: cover;
-  min-height: 51vh;
-  box-shadow: inset 0px 100px 20px -10px rgba(255, 255, 255, 1),
-    inset 0px -100px 20px -10px rgba(255, 255, 255, 1);
-
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
 }
 </style>

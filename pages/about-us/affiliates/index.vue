@@ -1,4 +1,3 @@
-
 <template>
   <div class="container">
     <Top />
@@ -12,20 +11,49 @@
           <div class="affiliates-container">
             <div class="lightbox" v-show="show_af_detail">
               <div class="lightbox-content-div">
-                <a href="javascript:void(0);" class="close-lightbox-btn" @click="close_detail"></a>
+                <a
+                  href="javascript:void(0);"
+                  class="close-lightbox-btn"
+                  @click="close_detail"
+                ></a>
 
                 <table>
                   <tr>
                     <td class="align-top pl-5 pt-4 pb-4">
-                      <img class="af-logo" src="~assets/images/af-logo-1.png" alt />
+                      <img
+                        class="af-logo"
+                        src="~assets/images/af-logo-1.png"
+                        alt
+                      />
                     </td>
                     <td class="align-top text-left pr-5 pt-4 pb-4">
-                      <div class="vuebar-element" v-bar>
+                      <div class="vuebar-element2" v-bar>
                         <div>
-                          <div class="sub-heading gold">PASTRY GLOBAL HONG KONG</div>
+                          <div class="sub-heading gold">
+                            PASTRY GLOBAL HONG KONG
+                          </div>
                           <div class="description">
-                            PastryGlobal Food Service Limited was founded in January 2007 with a team of experienced sales and marketing professionals specialising in building brand image and selling premium pastry ingredients. Through our extensive regional market knowledge and connections, we are the preferred business partner for both principals and customers. We represent more than 20 world famous pastry ingredient brands from 15 countries. With the full support of our customers, PastryGlobal has become one of the leading suppliers in Hong Kong and Macau for quality pastry ingredients. PastryGlobal is proud to work with the creme de la creme of partners, distributing the more than products to our customers.
-                            We build brands with our belief in quality ingredients. With our extensive network in the pastry world, we are delighted to recommend our partners to different market in other parts of the world for exploring business opportunities. Together we grow the business, not just within Hong Kong and Macau, but globally as our name says - PastryGlobal.
+                            PastryGlobal Food Service Limited was founded in
+                            January 2007 with a team of experienced sales and
+                            marketing professionals specialising in building
+                            brand image and selling premium pastry ingredients.
+                            Through our extensive regional market knowledge and
+                            connections, we are the preferred business partner
+                            for both principals and customers. We represent more
+                            than 20 world famous pastry ingredient brands from
+                            15 countries. With the full support of our
+                            customers, PastryGlobal has become one of the
+                            leading suppliers in Hong Kong and Macau for quality
+                            pastry ingredients. PastryGlobal is proud to work
+                            with the creme de la creme of partners, distributing
+                            the more than products to our customers. We build
+                            brands with our belief in quality ingredients. With
+                            our extensive network in the pastry world, we are
+                            delighted to recommend our partners to different
+                            market in other parts of the world for exploring
+                            business opportunities. Together we grow the
+                            business, not just within Hong Kong and Macau, but
+                            globally as our name says - PastryGlobal.
                           </div>
                         </div>
                       </div>
@@ -37,52 +65,20 @@
             <div class="big-heading">Affiliates</div>
 
             <ul class="list-inline">
-              <li class>
+              <li
+                v-for="item in 8"
+                :key="item.id"
+                class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6"
+              >
                 <a href="javascript:void(0);" @click="toggle_lightbox">
                   <img class="af-logo" src="~assets/images/af-logo-1.png" alt />
 
                   <span class="read-more-txt gold">READ MORE</span>
-                  <img class="more-dots" src="~assets/images/more-dots.png" alt />
-                </a>
-              </li>
-              <li class>
-                <a href="javascript:void(0);" @click="toggle_lightbox">
-                  <img class="af-logo" src="~assets/images/af-logo-1.png" alt />
-
-                  <span class="read-more-txt gold">READ MORE</span>
-                  <img class="more-dots" src="~assets/images/more-dots.png" alt />
-                </a>
-              </li>
-              <li class>
-                <a href="javascript:void(0);" @click="toggle_lightbox">
-                  <img class="af-logo" src="~assets/images/af-logo-1.png" alt />
-
-                  <span class="read-more-txt gold">READ MORE</span>
-                  <img class="more-dots" src="~assets/images/more-dots.png" alt />
-                </a>
-              </li>
-              <li class>
-                <a href="javascript:void(0);" @click="toggle_lightbox">
-                  <img class="af-logo" src="~assets/images/af-logo-1.png" alt />
-
-                  <span class="read-more-txt gold">READ MORE</span>
-                  <img class="more-dots" src="~assets/images/more-dots.png" alt />
-                </a>
-              </li>
-              <li class>
-                <a href="javascript:void(0);" @click="toggle_lightbox">
-                  <img class="af-logo" src="~assets/images/af-logo-1.png" alt />
-
-                  <span class="read-more-txt gold">READ MORE</span>
-                  <img class="more-dots" src="~assets/images/more-dots.png" alt />
-                </a>
-              </li>
-              <li class>
-                <a href="javascript:void(0);" @click="toggle_lightbox">
-                  <img class="af-logo" src="~assets/images/af-logo-1.png" alt />
-
-                  <span class="read-more-txt gold">READ MORE</span>
-                  <img class="more-dots" src="~assets/images/more-dots.png" alt />
+                  <img
+                    class="more-dots"
+                    src="~assets/images/more-dots.png"
+                    alt
+                  />
                 </a>
               </li>
             </ul>
@@ -139,7 +135,7 @@ export default {
   },
   computed: {
     detail_description_height() {
-      // const vuebar_div = document.querySelector(".vuebar-element");
+      // const vuebar_div = document.querySelector(".vuebar-element2");
       // var lightbox = document.querySelector(".lightbox-content-div");
       // var lightbox_H = lightbox.offsetHeight;
       // vuebar_div.style.visibility = "visible";
@@ -149,12 +145,12 @@ export default {
   methods: {
     toggle_lightbox() {
       this.show_af_detail = !this.show_af_detail;
-      const vuebar_div = document.querySelector(".vuebar-element");
+      const vuebar_div = document.querySelector(".vuebar-element2");
 
       var middle_container_h = document.querySelector(".affiliates-container")
         .offsetHeight;
       vuebar_div.style.height = middle_container_h - 100 + "px !important";
-      document.querySelector(".vuebar-element div").scrollTop = 0;
+      document.querySelector(".vuebar-element2 div").scrollTop = 0;
     },
     close_detail() {
       this.show_af_detail = false;
@@ -170,11 +166,16 @@ export default {
         $(window).height() -
         $(".top-outer").height() -
         $(".footer-div-outer").height();
+      // $(
+      //   ".about-content-outer,.about-content-div,.about-content-div table,.affiliates-container"
+      // ).height(slide_h);
+      $(".vuebar-element2").height(slide_h - 150);
+      // $(".vuebar-element2").height(200);
 
-      $(
-        ".about-content-outer,.about-content-div,.about-content-div table,.affiliates-container"
-      ).height(slide_h);
-      $(".vuebar-element").height(slide_h - 150);
+      // $(
+      //   ".mobile .about-content-outer,.mobile .about-content-div,.mobile .about-content-div table,.mobile .affiliates-container"
+      // ).css({ height: "auto" });
+      // $(".vuebar-element2").css({ height: "auto" });
     }
 
     adjust_slide_height();
@@ -198,35 +199,15 @@ export default {
 // Affiliates
 </script>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <style>
-.af-logo {
-  /* width: 50%; */
-  width: 224px;
-}
-.vuebar-element {
+.vuebar-element2 {
   /* height: 250px; */
   /* width: 100%; */
   /* max-width: 500px; */
   /* background: #dfe9fe; */
 }
 
-.affiliates-container .vuebar-element {
+.affiliates-container .vuebar-element2 {
   /* height: 200px !important; */
 }
 .affiliates-container .vb > .vb-dragger {
@@ -234,10 +215,10 @@ export default {
   left: auto;
 }
 
-.left-col .vuebar-element {
+.left-col .vuebar-element2 {
   padding: 0 0 0 35px;
 }
-.right-col .vuebar-element {
+.right-col .vuebar-element2 {
   /* padding: 0 35px 0 0; */
 }
 
@@ -246,7 +227,7 @@ export default {
   width: 12px;
   left: 0;
 }
-/* .left-col .vuebar-element .vb > .vb-dragger {
+/* .left-col .vuebar-element2 .vb > .vb-dragger {
   z-index: 5;
   width: 12px;
   left: 0;

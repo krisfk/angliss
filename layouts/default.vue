@@ -1,13 +1,13 @@
 <template>
-  <div>
+  <div id="main-container" :class="{ mobile: mobile_version }">
     <nuxt />
   </div>
 </template>
 
 <style>
 html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
@@ -53,3 +53,42 @@ html {
   background-color: #35495e;
 }
 </style>
+
+<script>
+export default {
+  data() {
+    return {
+      mobile_version: false,
+      browser: ""
+    };
+  },
+  methods: {
+    onResize() {
+      if (process.client) {
+        let width = window.innerWidth;
+        const deviceType = this.$ua.deviceType();
+        // if(smartphone=='smartphone')
+
+        this.mobile_version =
+          width <= 590 && deviceType == "smartphone" ? true : false;
+        // if (width > 590) {
+        //   this.mobile_version = false;
+        // } else {
+
+        //   this.mobile_version = true;
+        // }
+      }
+    }
+  },
+  mounted: function() {
+    this.$nextTick(function() {
+      this.onResize();
+    });
+    window.addEventListener("resize", this.onResize);
+    // this.switch_mobile_menu();
+    // this.deviceType = deviceType;
+
+    // console.log(this.checkBrowser);
+  }
+};
+</script>

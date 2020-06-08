@@ -1,4 +1,3 @@
-
 <template>
   <div class="container">
     <Top />
@@ -24,15 +23,20 @@
                   <table class="event-row-table">
                     <tr>
                       <td>
-                        <img class="edm-img-small-img" src="~/assets/images/temp-edm.jpg" alt />
+                        <img
+                          class="edm-img-small-img"
+                          src="~/assets/images/temp-edm.jpg"
+                          alt
+                        />
                       </td>
                       <td>
-                        <div class="edm-title">GALAXY MACAU 8TH ANNIVERSARY WITH WCF</div>
+                        <div class="edm-title">
+                          GALAXY MACAU 8TH ANNIVERSARY WITH WCF
+                        </div>
                         <div class="edm-date">JUNE, 2019</div>
                         <div class="edm-short-description">
-                          <br />．HKMOS Awards 2019
-                          <br />．ANGLISS MACAU 10th ANNIVERSARY
-                          <br />．GALAXY MACAU 8th ANNIVERSARY
+                          <br />．HKMOS Awards 2019 <br />．ANGLISS MACAU 10th
+                          ANNIVERSARY <br />．GALAXY MACAU 8th ANNIVERSARY
                         </div>
                       </td>
                     </tr>
@@ -47,15 +51,20 @@
 
               <ul class="list-inline edm-detail-ul">
                 <li>
-                  <img class="edm-img-big-img" src="~/assets/images/temp-edm.jpg" alt />
+                  <img
+                    class="edm-img-big-img"
+                    src="~/assets/images/temp-edm.jpg"
+                    alt
+                  />
                 </li>
                 <li class="right-col">
-                  <div class="edm-title">GALAXY MACAU 8TH ANNIVERSARY WITH WCF</div>
+                  <div class="edm-title">
+                    GALAXY MACAU 8TH ANNIVERSARY WITH WCF
+                  </div>
                   <div class="edm-date">JUNE, 2019</div>
                   <div class="edm-short-description">
-                    <br />．HKMOS Awards 2019
-                    <br />．ANGLISS MACAU 10th ANNIVERSARY
-                    <br />．GALAXY MACAU 8th ANNIVERSARY
+                    <br />．HKMOS Awards 2019 <br />．ANGLISS MACAU 10th
+                    ANNIVERSARY <br />．GALAXY MACAU 8th ANNIVERSARY
                   </div>
                 </li>
               </ul>
@@ -106,22 +115,6 @@ export default {
   mounted() {}
 };
 </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <style>
 .af-logo {
@@ -205,20 +198,5 @@ export default {
 
 .vb.vb-dragging-phantom > .vb-dragger > .vb-dragger-styler {
   background-color: rgba(200, 173, 105, 1);
-}
-
-.about-content-img {
-  background: url(~assets/images/about-section-img.jpg) no-repeat;
-  background-position: center center;
-  background-size: cover;
-  min-height: 51vh;
-  box-shadow: inset 0px 100px 20px -10px rgba(255, 255, 255, 1),
-    inset 0px -100px 20px -10px rgba(255, 255, 255, 1);
-
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
 }
 </style>

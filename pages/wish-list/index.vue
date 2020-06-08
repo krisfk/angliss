@@ -212,10 +212,9 @@ export default {
 </script>
 
 <style scope>
-.af-logo {
-  /* width: 50%; */
+/* .af-logo {
   width: 224px;
-}
+} */
 .vuebar-element {
   text-align: left;
 
@@ -233,7 +232,7 @@ export default {
 }
 
 .left-col .vuebar-element {
-  padding: 0 0 0 35px;
+  /* padding: 0 0 0 35px; */
 }
 .right-col .vuebar-element {
   /* padding: 0 35px 0 0; */
@@ -295,20 +294,5 @@ export default {
 
 .vb.vb-dragging-phantom > .vb-dragger > .vb-dragger-styler {
   background-color: rgba(200, 173, 105, 1);
-}
-
-.about-content-img {
-  background: url(~assets/images/about-section-img.jpg) no-repeat;
-  background-position: center center;
-  background-size: cover;
-  min-height: 51vh;
-  box-shadow: inset 0px 100px 20px -10px rgba(255, 255, 255, 1),
-    inset 0px -100px 20px -10px rgba(255, 255, 255, 1);
-
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
 }
 </style>

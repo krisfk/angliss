@@ -44,7 +44,8 @@ export default {
         "bootstrap-vue/nuxt",
         "@nuxtjs/axios",
         "@nuxtjs/dotenv",
-        "@nuxtjs/proxy"
+        "@nuxtjs/proxy",
+        "nuxt-user-agent"
     ],
     axios: {
         // baseURL: "http://angliss-layout.emo.com.hk/"

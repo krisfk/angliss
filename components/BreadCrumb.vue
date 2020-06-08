@@ -66,7 +66,7 @@ export default {
 
     switch (path_slug_arr[1]) {
       case "about-us":
-        path_name_arr.push("About us");
+        path_name_arr.push("About Us");
         break;
       case "products":
         path_name_arr.push("Products");
@@ -86,12 +86,18 @@ export default {
     // var slug = this.$route.params.about_info;
     var slug = path_slug_arr[path_slug_arr.length - 1];
 
+    var body = document.body;
+
+    body.removeAttribute("class");
+
+    body.classList.add(slug);
+
     switch (slug) {
       case "who-are-we":
-        this.title = "Who we are";
+        this.title = "Who Are We";
         break;
       case "what-do-we-do":
-        this.title = "What do we do & provide";
+        this.title = "What Do We Do & Provide";
         break;
       case "quality-control":
         this.title = "Quality Control";

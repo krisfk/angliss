@@ -1,4 +1,3 @@
-
 <template>
   <div class="container">
     <Top />
@@ -19,7 +18,11 @@
               <li v-for="item in 12" :key="item.id" class="col-lg-3">
                 <a href="#">
                   <div>catalogue title</div>
-                  <img class="issue-book-cover" src="~/assets/images/issue-book-cover.jpg" alt />
+                  <img
+                    class="issue-book-cover"
+                    src="~/assets/images/issue-book-cover.jpg"
+                    alt
+                  />
                 </a>
               </li>
             </ul>
@@ -77,22 +80,6 @@ export default {
   mounted() {}
 };
 </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <style>
 .af-logo {
@@ -176,20 +163,5 @@ export default {
 
 .vb.vb-dragging-phantom > .vb-dragger > .vb-dragger-styler {
   background-color: rgba(200, 173, 105, 1);
-}
-
-.about-content-img {
-  background: url(../../../assets/images/about-section-img.jpg) no-repeat;
-  background-position: center center;
-  background-size: cover;
-  min-height: 51vh;
-  box-shadow: inset 0px 100px 20px -10px rgba(255, 255, 255, 1),
-    inset 0px -100px 20px -10px rgba(255, 255, 255, 1);
-
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
 }
 </style>

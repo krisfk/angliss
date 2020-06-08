@@ -88,6 +88,10 @@ export default {
       $(".slick-slider,.slide-banner-div,.half-banner-img-outer").height(
         slide_h
       );
+
+      $(
+        ".mobile .slick-slider,.mobile .slide-banner-div,.mobile .half-banner-img-outer"
+      ).css({ height: "auto" });
     }
 
     adjust_slide_height();
@@ -108,11 +112,17 @@ export default {
   box-shadow: inset 0px 30px 20px -10px rgba(255, 255, 255, 0.6),
     inset 0px -30px 20px -10px rgba(255, 255, 255, 0.6);
 }
+.mobile .slide-banner-div {
+  min-height: auto;
+}
 
 .half-banner-img-outer {
   background: url("../assets/images/half-banner-img.jpg") no-repeat;
   background-position: center center;
   background-size: cover;
   min-height: 52vh;
+}
+.mobile .half-banner-img-outer {
+  min-height: auto;
 }
 </style>
