@@ -11,7 +11,7 @@
           @click="show_lightbox = false"
         ></a>
         <div class="big-heading gold">SALES MANAGER</div>
-        <div class="vuebar-element" v-bar>
+        <div class="vuebar-element4" v-bar>
           <div>
             Responsibility:
             <br />．Customer Service Hotline Management <br />．Effectively
@@ -145,7 +145,7 @@ export default {
 
       $(".careers-content-outer table").height(slide_h - 40);
       $(".careers.lightbox .lightbox-content-div").height(slide_h - 200);
-      $(".vuebar-element").height(slide_h - 250);
+      $(".vuebar-element4").height(slide_h - 250);
     }
 
     adjust_slide_height();
@@ -158,7 +158,7 @@ export default {
 </script>
 
 <style scope>
-.vuebar-element {
+.vuebar-element4 {
   text-align: left;
 
   /* width: 100%; */
@@ -166,7 +166,7 @@ export default {
   /* background: #dfe9fe; */
 }
 
-.affiliates-container .vuebar-element {
+.affiliates-container .vuebar-element4 {
   /* height: 200px !important; */
 }
 .affiliates-container .vb > .vb-dragger {
@@ -174,10 +174,10 @@ export default {
   left: auto;
 }
 
-.left-col .vuebar-element {
+.left-col .vuebar-element4 {
   /* padding: 0 0 0 35px; */
 }
-.right-col .vuebar-element {
+.right-col .vuebar-element4 {
   /* padding: 0 35px 0 0; */
 }
 
@@ -187,7 +187,7 @@ export default {
   right: 0;
   left: auto;
 }
-/* .left-col .vuebar-element .vb > .vb-dragger {
+/* .left-col .vuebar-element4 .vb > .vb-dragger {
   z-index: 5;
   width: 12px;
   left: 0;

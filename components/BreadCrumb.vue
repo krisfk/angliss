@@ -11,15 +11,13 @@
         </span>
 
         <span v-if="index > 0">
-          <img
-            class="breadcrumb-arrow-icon"
-            src="../assets/images/breadcrumb-arrow.png"
-            alt
-          />
+          <img class="breadcrumb-arrow-icon" src="../assets/images/breadcrumb-arrow.png" alt />
 
-          <nuxt-link :to="'..' + path_url_arr[index]">{{
+          <nuxt-link :to="'..' + path_url_arr[index]">
+            {{
             path_name_arr[index]
-          }}</nuxt-link>
+            }}
+          </nuxt-link>
         </span>
 
         <!-- <img class="breadcrumb-arrow-icon" src="../assets/images/breadcrumb-arrow.png" alt /> -->
@@ -50,6 +48,10 @@ export default {
       full_path = tmp_arr[0];
     }
     var path_slug_arr = full_path.split("/");
+
+    if (path_slug_arr[path_slug_arr.length - 1] == "") {
+      path_slug_arr.pop();
+    }
 
     for (var i = 0; i < path_slug_arr.length; i++) {
       if (i == 0) {

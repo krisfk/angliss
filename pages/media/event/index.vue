@@ -27,10 +27,10 @@
                   </span>
                   <table class="event-row-table">
                     <tr>
-                      <td>
+                      <td class="left-col">
                         <img src="../../../assets/images/event-photo.jpg" alt />
                       </td>
-                      <td>
+                      <td class="right-col">
                         <div class="event-title">
                           GALAXY MACAU 8TH ANNIVERSARY WITH WCF
                         </div>

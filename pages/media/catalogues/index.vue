@@ -14,8 +14,12 @@
             <MediaMenu />
           </td>
           <td class="right-col">
-            <ul class="list-inline issue-list-ul col-lg-12">
-              <li v-for="item in 12" :key="item.id" class="col-lg-3">
+            <ul class="list-inline issue-list-ul">
+              <li
+                v-for="item in 12"
+                :key="item.id"
+                class="col-lg-3 col-md-4 col-sm-6 col-6 "
+              >
                 <a href="#">
                   <div>catalogue title</div>
                   <img

@@ -108,21 +108,21 @@ export default {
   background: url("../assets/images/banner.jpg") no-repeat;
   background-position: center center;
   background-size: cover;
-  min-height: 52vh;
+  min-height: 62vh;
   box-shadow: inset 0px 30px 20px -10px rgba(255, 255, 255, 0.6),
     inset 0px -30px 20px -10px rgba(255, 255, 255, 0.6);
 }
 .mobile .slide-banner-div {
-  min-height: auto;
+  /* min-height: auto; */
 }
 
 .half-banner-img-outer {
   background: url("../assets/images/half-banner-img.jpg") no-repeat;
   background-position: center center;
   background-size: cover;
-  min-height: 52vh;
+  min-height: 62vh;
 }
 .mobile .half-banner-img-outer {
-  min-height: auto;
+  /* min-height: auto; */
 }
 </style>

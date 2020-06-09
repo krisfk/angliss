@@ -59,8 +59,12 @@
                   communication to clients and other stakeholders.
                 </div>
 
-                <ul class="list-inline issue-list-ul col-lg-12">
-                  <li v-for="item in 6" :key="item.id" class="col-lg-4">
+                <ul class="list-inline issue-list-ul">
+                  <li
+                    v-for="item in 6"
+                    :key="item.id"
+                    class="col-lg-3 col-md-4 col-sm-6 col-6"
+                  >
                     <a href="#">
                       <div>ISSUE 49</div>
                       <img

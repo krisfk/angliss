@@ -28,13 +28,13 @@
                   </span>
                   <table class="event-row-table">
                     <tr>
-                      <td>
+                      <td class="left-col">
                         <div class="video-play-div">
                           <a href="#" class="video-play-btn"></a>
                           <img src="~assets/images/event-photo.jpg" alt />
                         </div>
                       </td>
-                      <td>
+                      <td class="right-col">
                         <div class="event-title">
                           GALAXY MACAU 8TH ANNIVERSARY WITH WCF
                         </div>

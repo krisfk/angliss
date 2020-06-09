@@ -49,11 +49,7 @@
                   </div>
 
                   <div>
-                    <img
-                      class="tag"
-                      src="../../assets/images/promo-tag.png"
-                      alt
-                    />
+                    <img class="tag" src="../../assets/images/promo-tag.png" alt />
                   </div>
                 </td>
                 <td class="right-col">
@@ -61,21 +57,13 @@
                     <li>
                       COUNTRY ORIGIN
                       <div>
-                        <img
-                          class="flag-icon"
-                          src="../../assets/images/flag-icon.jpg"
-                          alt
-                        />
+                        <img class="flag-icon" src="../../assets/images/flag-icon.jpg" alt />
                       </div>
                     </li>
                     <li>
                       BRAND
                       <div>
-                        <img
-                          class="brand-icon"
-                          src="../../assets/images/brand-icon.jpg"
-                          alt
-                        />
+                        <img class="brand-icon" src="../../assets/images/brand-icon.jpg" alt />
                       </div>
                     </li>
                     <li>
@@ -111,11 +99,7 @@
               </tr>
             </table>
 
-            <a
-              href="javascript:void(0);"
-              class="close-lightbox-btn"
-              @click="show_lightbox = false"
-            ></a>
+            <a href="javascript:void(0);" class="close-lightbox-btn" @click="show_lightbox = false"></a>
 
             <!-- <table>
               <tr>
@@ -141,8 +125,26 @@
         <table>
           <td class="left-col">
             <div class="big-heading">PRODUCTS</div>
+            <div class="products-menu mobile">
+              <select @change="mobile_menu_onChange($event)">
+                <option value="MEAT" data-url="?c=1">MEAT</option>
+                <option value="chilled beef" data-url="?c=1">- chilled beef</option>
+                <option value="frozen beef" data-url="?c=1">- frozen beef</option>
+                <option value="lamb & mutton" data-url="?c=1">- lamb & mutton</option>
+                <option value="MEAT" data-url="?c=1">MEAT</option>
+                <option value="chilled beef" data-url="?c=1">- chilled beef</option>
+                <option value="frozen beef" data-url="?c=1">- frozen beef</option>
+                <option value="lamb & mutton" data-url="?c=1">- lamb & mutton</option>
+                <option value="MEAT" data-url="?c=1">MEAT</option>
+                <option value="chilled beef" data-url="?c=1">- chilled beef</option>
+                <option value="frozen beef" data-url="?c=1">- frozen beef</option>
+                <option value="lamb & mutton" data-url="?c=1">- lamb & mutton</option>
+                <option value="promotion item" data-url="?c=1">promotion item</option>
+                <option value="brand" data-url="?b=1">brands</option>
+              </select>
+            </div>
 
-            <ul class="products-menu">
+            <ul class="products-menu pc">
               <li>
                 <nuxt-link
                   to="?c=1"
@@ -153,11 +155,7 @@
                   "
                   :class="{ active: activeBtn === 'btn1' }"
                 >
-                  <img
-                    class="point-arrow"
-                    src="../../assets/images/product-menu-point.png"
-                    alt
-                  />
+                  <img class="point-arrow" src="../../assets/images/product-menu-point.png" alt />
                   MEAT
                 </nuxt-link>
                 <ul
@@ -192,91 +190,55 @@
                   "
                   :class="{ active: activeBtn === 'btn2' }"
                 >
-                  <img
-                    class="point-arrow"
-                    src="../../assets/images/product-menu-point.png"
-                    alt
-                  />
+                  <img class="point-arrow" src="../../assets/images/product-menu-point.png" alt />
                   SEAFOOD
                 </nuxt-link>
               </li>
               <li>
                 <nuxt-link to="?c=1">
-                  <img
-                    class="point-arrow"
-                    src="../../assets/images/product-menu-point.png"
-                    alt
-                  />
+                  <img class="point-arrow" src="../../assets/images/product-menu-point.png" alt />
                   PASTRY & DAIRY
                 </nuxt-link>
               </li>
               <li>
                 <nuxt-link to="?c=1">
-                  <img
-                    class="point-arrow"
-                    src="../../assets/images/product-menu-point.png"
-                    alt
-                  />
+                  <img class="point-arrow" src="../../assets/images/product-menu-point.png" alt />
                   CHEESE
                 </nuxt-link>
               </li>
               <li>
                 <nuxt-link to="?c=1">
-                  <img
-                    class="point-arrow"
-                    src="../../assets/images/product-menu-point.png"
-                    alt
-                  />
+                  <img class="point-arrow" src="../../assets/images/product-menu-point.png" alt />
                   VEGETABLES
                 </nuxt-link>
               </li>
               <li>
                 <nuxt-link to="?c=1">
-                  <img
-                    class="point-arrow"
-                    src="../../assets/images/product-menu-point.png"
-                    alt
-                  />
+                  <img class="point-arrow" src="../../assets/images/product-menu-point.png" alt />
                   DELI
                 </nuxt-link>
               </li>
               <li>
                 <nuxt-link to="?c=1">
-                  <img
-                    class="point-arrow"
-                    src="../../assets/images/product-menu-point.png"
-                    alt
-                  />
+                  <img class="point-arrow" src="../../assets/images/product-menu-point.png" alt />
                   GROCERY
                 </nuxt-link>
               </li>
               <li>
                 <nuxt-link to="?c=1">
-                  <img
-                    class="point-arrow"
-                    src="../../assets/images/product-menu-point.png"
-                    alt
-                  />
+                  <img class="point-arrow" src="../../assets/images/product-menu-point.png" alt />
                   ITALIAN SPECIALITY
                 </nuxt-link>
               </li>
               <li>
                 <nuxt-link to="?c=1">
-                  <img
-                    class="point-arrow"
-                    src="../../assets/images/product-menu-point.png"
-                    alt
-                  />
+                  <img class="point-arrow" src="../../assets/images/product-menu-point.png" alt />
                   PROMOTIONAL ITEMS
                 </nuxt-link>
               </li>
               <li>
                 <a href="?b=1">
-                  <img
-                    class="point-arrow"
-                    src="../../assets/images/product-menu-point.png"
-                    alt
-                  />
+                  <img class="point-arrow" src="../../assets/images/product-menu-point.png" alt />
                   BRANDS
                 </a>
               </li>
@@ -289,47 +251,40 @@
               <a
                 class="products-filter-btn"
                 href="javascript:void(0);"
-                @click="show_filter = true"
+                @click="
+                  show_filter = true;
+                  mouseOverProduct = '';
+                "
               >
-                <img
-                  class="point-arrow"
-                  src="../../assets/images/product-menu-point.png"
-                  alt
-                />
+                <img class="point-arrow" src="../../assets/images/product-menu-point.png" alt />
                 CATEGORIES
               </a>
               <a
                 class="products-filter-btn"
                 href="javascript:void(0);"
-                @click="show_filter = true"
+                @click="
+                  show_filter = true;
+                  mouseOverProduct = '';
+                "
               >
-                <img
-                  class="point-arrow"
-                  src="../../assets/images/product-menu-point.png"
-                  alt
-                />
+                <img class="point-arrow" src="../../assets/images/product-menu-point.png" alt />
                 BRANDS
               </a>
               <a
                 class="products-filter-btn"
                 href="javascript:void(0);"
-                @click="show_filter = true"
+                @click="
+                  show_filter = true;
+                  mouseOverProduct = '';
+                "
               >
-                <img
-                  class="point-arrow"
-                  src="../../assets/images/product-menu-point.png"
-                  alt
-                />
+                <img class="point-arrow" src="../../assets/images/product-menu-point.png" alt />
                 COUNTRY OF ORIGIN
               </a>
             </div>
 
             <div class="filter-div" v-show="show_filter">
-              <a
-                href="javascript:void(0);"
-                class="close-filter-btn"
-                @click="show_filter = false"
-              ></a>
+              <a href="javascript:void(0);" class="close-filter-btn" @click="show_filter = false"></a>
 
               <div>
                 <ul class="filters-buttons-ul">
@@ -337,18 +292,13 @@
                     <a href="#" class="filter-ok-btn">OK</a>
                   </li>
                   <li>
-                    <a
-                      href="#"
-                      class="filter-cancel-btn"
-                      @click="show_filter = false"
-                      >CANCEL</a
-                    >
+                    <a href="#" class="filter-cancel-btn" @click="show_filter = false">CANCEL</a>
                   </li>
                   <li>
                     <a href="#" class="filter-clear-btn">CLEAR LIST</a>
                   </li>
                 </ul>
-                <div class="sub-heading">Selected Filters:</div>
+                <div class="sub-heading mt-5">Selected Filters:</div>
 
                 <table class="selected-filters-table">
                   <tr>
@@ -366,14 +316,41 @@
                 </table>
               </div>
 
-              <ul class="col-lg-12 list-inline">
-                <li class="col-lg-12 font-weight-bold">No.</li>
-                <li class="col-lg-3">111</li>
-                <li class="col-lg-3">222</li>
-                <li class="col-lg-3">333</li>
-                <li class="col-lg-3">444</li>
-              </ul>
-              <ul class="col-lg-12 list-inline">
+              <div class="vuebar-element3" v-bar>
+                <div>
+                  <ul class="list-inline col-lg-12 col-md-12 col-sm-12 col-12">
+                    <li class="col-lg-12 col-md-12 col-sm-12 col-12 font-weight-bold">No.</li>
+                    <li class="col-lg-3 col-md-4 col-sd-4 col-4">111</li>
+                    <li class="col-lg-3 col-md-4 col-sd-4 col-4">222</li>
+                    <li class="col-lg-3 col-md-4 col-sd-4 col-4">333</li>
+                    <li class="col-lg-3 col-md-4 col-sd-4 col-4">444</li>
+                  </ul>
+                  <ul class="list-inline col-lg-12 col-md-12 col-sm-12 col-12">
+                    <li class="col-lg-12 col-md-12 col-sm-12 col-12 font-weight-bold">A</li>
+                    <li class="col-lg-3 col-md-4 col-sd-4 col-4">A</li>
+                    <li class="col-lg-3 col-md-4 col-sd-4 col-4">AA</li>
+                    <li class="col-lg-3 col-md-4 col-sd-4 col-4">AAA</li>
+                    <li class="col-lg-3 col-md-4 col-sd-4 col-4">AAAA</li>
+                  </ul>
+                  <ul class="list-inline col-lg-12 col-md-12 col-sm-12 col-12">
+                    <li class="col-lg-12 col-md-12 col-sm-12 col-12 font-weight-bold">B</li>
+                    <li class="col-lg-3 col-md-4 col-sd-4 col-4">B</li>
+                    <li class="col-lg-3 col-md-4 col-sd-4 col-4">BB</li>
+                    <li class="col-lg-3 col-md-4 col-sd-4 col-4">BBB</li>
+                    <li class="col-lg-3 col-md-4 col-sd-4 col-4">BBBB</li>
+                  </ul>
+
+                  <ul class="list-inline col-lg-12 col-md-12 col-sm-12 col-12">
+                    <li class="col-lg-12 col-md-12 col-sm-12 col-12 font-weight-bold">C</li>
+                    <li class="col-lg-3 col-md-4 col-sd-4 col-4">C</li>
+                    <li class="col-lg-3 col-md-4 col-sd-4 col-4">CC</li>
+                    <li class="col-lg-3 col-md-4 col-sd-4 col-4">CCC</li>
+                    <li class="col-lg-3 col-md-4 col-sd-4 col-4">CCCC</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- <ul class="col-lg-12 list-inline">
                 <li class="col-lg-12 font-weight-bold">A</li>
                 <li class="col-lg-3">a</li>
                 <li class="col-lg-3">aa</li>
@@ -393,33 +370,12 @@
                 <li class="col-lg-3">cc</li>
                 <li class="col-lg-3">ccc</li>
                 <li class="col-lg-3">cccc</li>
-              </ul>
+              </ul>-->
             </div>
 
             <!--category list-->
-            <ul
-              v-if="CategoryView && !show_product_list"
-              class="list-inline category-list-ul col-lg-12"
-            >
-              <li class="col-lg-3">
-                <nuxt-link to="?c=1">
-                  <div class="category-name">MEAT</div>
-                  <img src="../../assets/images/cate-img.png" alt />
-                </nuxt-link>
-              </li>
-              <li class="col-lg-3">
-                <nuxt-link to="?c=1">
-                  <div class="category-name">MEAT</div>
-                  <img src="../../assets/images/cate-img.png" alt />
-                </nuxt-link>
-              </li>
-              <li class="col-lg-3">
-                <nuxt-link to="?c=1">
-                  <div class="category-name">MEAT</div>
-                  <img src="../../assets/images/cate-img.png" alt />
-                </nuxt-link>
-              </li>
-              <li class="col-lg-3">
+            <ul v-if="CategoryView && !show_product_list" class="list-inline category-list-ul">
+              <li class="col-lg-3 col-md-4 col-sm-6 col-6" v-for="item in 8" :key="item.id">
                 <nuxt-link to="?c=1">
                   <div class="category-name">MEAT</div>
                   <img src="../../assets/images/cate-img.png" alt />
@@ -434,11 +390,7 @@
             >
               <li v-if="BrandsListView == 2" class="brand-row col-lg-12">
                 <div class>
-                  <img
-                    class="brand-logo"
-                    src="../../assets/images/brand-logo.png"
-                    alt
-                  />
+                  <img class="brand-logo" src="../../assets/images/brand-logo.png" alt />
                 </div>
                 <div class>
                   Pigs by Savoury Choice farm in Alberta, Canada are nourished
@@ -452,7 +404,11 @@
                   in any of our premium pork products.
                 </div>
               </li>
-              <li v-for="(item, index) in 10" :key="item.id" class="col-lg-3">
+              <li
+                v-for="(item, index) in 10"
+                :key="item.id"
+                class="col-lg-3 col-md-4 col-sm-6 col-6"
+              >
                 <div
                   class="product-mouseover-view"
                   :class="{ active: mouseOverProduct === 'p' + index }"
@@ -466,8 +422,7 @@
                       show_lightbox = true;
                       mouseOverProduct = '';
                     "
-                    >Tail</a
-                  >
+                  >Tail</a>
 
                   <div class="product-slide-show">
                     <VueSlickCarousel
@@ -477,27 +432,53 @@
                       :speed="500"
                       :slidesToShow="1"
                     >
+                      <!-- @click="
+                          show_lightbox = true;
+                          mouseOverProduct = '';
+                      "-->
                       <div>
+                        <a
+                          href="javascript:void(0);"
+                          class="slick-click-a"
+                          @click="
+                            show_lightbox = true;
+                            mouseOverProduct = '';
+                          "
+                        ></a>
+                        <!-- <a href="javascript:void(0);"> -->
                         <img
                           class="slideshow-img-small"
                           src="../../assets/images/product-photo-1.jpg"
                           alt
                         />
+                        <!-- </a> -->
                       </div>
-                      <div>
+                      <!-- <a
+                        href="javascript:void(0);"
+                        @click="
+                          show_lightbox = true;
+                          mouseOverProduct = '';
+                        "
+                      >
                         <img
                           class="slideshow-img-small"
                           src="../../assets/images/product-photo-2.jpg"
                           alt
                         />
-                      </div>
-                      <div>
+                      </a>
+                      <a
+                        href="javascript:void(0);"
+                        @click="
+                          show_lightbox = true;
+                          mouseOverProduct = '';
+                        "
+                      >
                         <img
                           class="slideshow-img-small"
                           src="../../assets/images/product-photo-3.jpg"
                           alt
                         />
-                      </div>
+                      </a>-->
                     </VueSlickCarousel>
                   </div>
 
@@ -512,21 +493,13 @@
                       <li>
                         COUNTRY ORIGIN
                         <div>
-                          <img
-                            class="flag-icon"
-                            src="../../assets/images/flag-icon.jpg"
-                            alt
-                          />
+                          <img class="flag-icon" src="../../assets/images/flag-icon.jpg" alt />
                         </div>
                       </li>
                       <li>
                         BRAND
                         <div>
-                          <img
-                            class="brand-icon"
-                            src="../../assets/images/brand-icon.jpg"
-                            alt
-                          />
+                          <img class="brand-icon" src="../../assets/images/brand-icon.jpg" alt />
                         </div>
                       </li>
                       <li>
@@ -546,11 +519,7 @@
                         <div class="product-type-name">BEEF</div>
                       </li>
 
-                      <img
-                        class="tag"
-                        src="../../assets/images/promo-tag.png"
-                        alt
-                      />
+                      <img class="tag" src="../../assets/images/promo-tag.png" alt />
                     </ul>
                   </a>
                 </div>
@@ -567,41 +536,22 @@
                   :class="{ active: mouseOverProduct === 'p' + index }"
                 >
                   <span class="product-name">Tail</span>
-                  <img
-                    class="tag"
-                    src="../../assets/images/promo-tag.png"
-                    alt
-                  />
+                  <img class="tag" src="../../assets/images/promo-tag.png" alt />
                   <span class="wish-heart-icon"></span>
-                  <img
-                    class="product-photo"
-                    src="../../assets/images/product-photo.jpg"
-                    alt
-                  />
+                  <img class="product-photo" src="../../assets/images/product-photo.jpg" alt />
                 </a>
               </li>
             </ul>
 
             <!--brand list-->
-            <ul
-              v-else-if="BrandsListView"
-              class="list-inline brands-list-ul col-lg-12"
-            >
-              <li v-for="item in 4" :key="item.id" class="col-lg-3">
+            <ul v-else-if="BrandsListView" class="list-inline brands-list-ul">
+              <li v-for="item in 8" :key="item.id" class="col-lg-3 col-md-4 col-sm-6 col-6">
                 <div class="white-square-1"></div>
                 <div class="white-square-2"></div>
                 <nuxt-link to="?c=1&b=2">
-                  <img
-                    class="more-dots"
-                    src="../../assets/images/more-dots.png"
-                    alt
-                  />
+                  <img class="more-dots" src="../../assets/images/more-dots.png" alt />
                   <span class="brand-name">Arla</span>
-                  <img
-                    class="brand-logo"
-                    src="../../assets/images/brand-logo.png"
-                    alt
-                  />
+                  <img class="brand-logo" src="../../assets/images/brand-logo.png" alt />
                 </nuxt-link>
               </li>
             </ul>
@@ -664,9 +614,10 @@ export default {
     // return this.CategoryView;
   },
   methods: {
-    // menu_clicked_category_level() {
-    // this.show_product_list = true;
-    // }
+    mobile_menu_onChange(event) {
+      var data_url = event.target.selectedOptions[0].getAttribute("data-url");
+      this.$router.push(data_url);
+    }
   },
   mounted() {
     function adjust_slide_height() {
@@ -699,14 +650,14 @@ export default {
 </script>
 
 <style>
-.vuebar-element {
-  /* height: 250px; */
+.vuebar-element3 {
+  height: 400px;
   /* width: 100%; */
   /* max-width: 500px; */
   /* background: #dfe9fe; */
 }
 
-.affiliates-container .vuebar-element {
+.affiliates-container .vuebar-element3 {
   /* height: 200px !important; */
 }
 .affiliates-container .vb > .vb-dragger {
@@ -714,10 +665,10 @@ export default {
   left: auto;
 }
 
-.left-col .vuebar-element {
+.left-col .vuebar-element3 {
   padding: 0 0 0 35px;
 }
-.right-col .vuebar-element {
+.right-col .vuebar-element3 {
   /* padding: 0 35px 0 0; */
 }
 
@@ -726,7 +677,7 @@ export default {
   width: 12px;
   left: 0;
 }
-/* .left-col .vuebar-element .vb > .vb-dragger {
+/* .left-col .vuebar-element3 .vb > .vb-dragger {
   z-index: 5;
   width: 12px;
   left: 0;

@@ -115,7 +115,7 @@
           </tr>
         </table>
 
-        <div>
+        <div class="d-inline-block contact-form-buttons-div">
           <ul class="list-inline float-left mt-4">
             <li class="d-inline-block">
               <a
@@ -192,12 +192,11 @@ export default {
     }
 
     function adjust_slide_height() {
-      var slide_h =
-        $(window).height() -
-        $(".top-outer").height() -
-        $(".footer-div-outer").height();
-
-      $(".wishlist-content-outer").height(slide_h - 40);
+      // var slide_h =
+      //   $(window).height() -
+      //   $(".top-outer").height() -
+      //   $(".footer-div-outer").height();
+      // $(".wishlist-content-outer").height(slide_h - 40);
       // $(".careers.lightbox .lightbox-content-div").height(slide_h - 200);
       // $(".vuebar-element").height(slide_h - 250);
     }

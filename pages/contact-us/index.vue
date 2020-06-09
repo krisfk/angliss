@@ -35,7 +35,7 @@
           </div>
         </div>
       </div>
-    </div> -->
+    </div>-->
 
     <div class="google-map-div">
       <div style="width: 100%">
@@ -45,7 +45,7 @@
           height="246"
           frameborder="0"
           style="border:0;"
-          allowfullscreen=""
+          allowfullscreen
           aria-hidden="false"
           tabindex="0"
         ></iframe>
@@ -60,7 +60,7 @@
           :position="item.position"
           @click="center = item.position"
         />
-      </gmap-map> -->
+      </gmap-map>-->
     </div>
 
     <div class="contact-us-content-outer">
@@ -76,17 +76,17 @@
           </div>
 
           <div class="contact-info">
-            <span class="gold">T</span> +853 2886 2886 <br />
-            <span class="gold">F</span> +853 2886 2828 <br />
+            <span class="gold">T</span> +853 2886 2886
+            <br />
+            <span class="gold">F</span> +853 2886 2828
+            <br />
             <span class="gold">E</span>
-            <a href="mailto:info@angliss.com.mo" class="mail"
-              >info@angliss.com.mo</a
-            >
+            <a href="mailto:info@angliss.com.mo" class="mail">info@angliss.com.mo</a>
           </div>
           <div class="gold-line"></div>
 
           <div class="contact-form-div">
-            <form action="" @submit.prevent="submit">
+            <form action @submit.prevent="submit">
               <table>
                 <tr>
                   <td>TO</td>
@@ -126,26 +126,18 @@
                 <tr>
                   <td></td>
                   <td class="form-right-col pt-4">
-                    <span class="captcha-statement"
-                      >PLEASE ENTER THE SECURITY CODE IN THE BOX</span
-                    >
+                    <span class="captcha-statement">PLEASE ENTER THE SECURITY CODE IN THE BOX</span>
                     <br />
-                    <span
-                      ><img
-                        src="http://angliss-layout.emo.com.hk/captcha/captcha-image.php"
-                        alt=""
-                    /></span>
-                    <input
-                      class="captcha-input d-inline"
-                      type="text"
-                      v-model="captcha_input"
-                    />
+                    <span>
+                      <img :src="site_url+'captcha/captcha-image.php'" alt />
+                    </span>
+                    <input class="captcha-input d-inline" type="text" v-model="captcha_input" />
                     <!-- {{ captcha_input }} -->
                   </td>
                 </tr>
                 <tr>
                   <td></td>
-                  <td>
+                  <td class="form-right-col">
                     <input type="submit" class="submit-btn" />
                   </td>
                 </tr>
@@ -160,35 +152,67 @@
             <ul class="braches-ul">
               <li class="gold region">CHINA</li>
 
-              <li><a href="javascript:void(0);">Beijing</a></li>
-              <li><a href="javascript:void(0);">Changsha</a></li>
-              <li><a href="javascript:void(0);">Chengdu</a></li>
-              <li><a href="javascript:void(0);">Guangzhou</a></li>
-              <li><a href="javascript:void(0);">Haikou</a></li>
-              <li><a href="javascript:void(0);">Hangzhou</a></li>
-              <li><a href="javascript:void(0);">Hunan</a></li>
+              <li>
+                <a href="javascript:void(0);">Beijing</a>
+              </li>
+              <li>
+                <a href="javascript:void(0);">Changsha</a>
+              </li>
+              <li>
+                <a href="javascript:void(0);">Chengdu</a>
+              </li>
+              <li>
+                <a href="javascript:void(0);">Guangzhou</a>
+              </li>
+              <li>
+                <a href="javascript:void(0);">Haikou</a>
+              </li>
+              <li>
+                <a href="javascript:void(0);">Hangzhou</a>
+              </li>
+              <li>
+                <a href="javascript:void(0);">Hunan</a>
+              </li>
             </ul>
 
             <ul class="braches-ul">
               <li class="region">&nbsp;</li>
-              <li><a href="javascript:void(0);">Sanya</a></li>
-              <li><a href="javascript:void(0);">Shanghai</a></li>
-              <li><a href="javascript:void(0);">Shenyang</a></li>
-              <li><a href="javascript:void(0);">Shenzhen</a></li>
-              <li><a href="javascript:void(0);">Tianjin</a></li>
-              <li><a href="javascript:void(0);">Wuhan </a></li>
-              <li><a href="javascript:void(0);">Xi’an </a></li>
+              <li>
+                <a href="javascript:void(0);">Sanya</a>
+              </li>
+              <li>
+                <a href="javascript:void(0);">Shanghai</a>
+              </li>
+              <li>
+                <a href="javascript:void(0);">Shenyang</a>
+              </li>
+              <li>
+                <a href="javascript:void(0);">Shenzhen</a>
+              </li>
+              <li>
+                <a href="javascript:void(0);">Tianjin</a>
+              </li>
+              <li>
+                <a href="javascript:void(0);">Wuhan</a>
+              </li>
+              <li>
+                <a href="javascript:void(0);">Xi’an</a>
+              </li>
             </ul>
           </div>
 
           <ul class="braches-ul">
             <li class="gold region">HONG KONG</li>
-            <li><a href="">HONG KONG</a></li>
+            <li>
+              <a href>HONG KONG</a>
+            </li>
           </ul>
 
           <ul class="braches-ul">
             <li class="gold region">SINGAPORE</li>
-            <li><a href="">SINGAPORE</a></li>
+            <li>
+              <a href>SINGAPORE</a>
+            </li>
           </ul>
         </div>
 
@@ -229,6 +253,8 @@
 import Top from "~/components/Top.vue";
 import Footer from "~/components/Footer.vue";
 import BreadCrumb from "~/components/BreadCrumb.vue";
+import { mapMutations, mapState } from "vuex";
+
 // import $ from "jquery";
 import Vuebar from "vuebar";
 
@@ -248,16 +274,40 @@ export default {
       // ]
     };
   },
+  computed: {
+    ...mapState({ site_url: "site_url" })
+  },
   methods: {
     submit() {
       //  http://angliss-layout.emo.com.hk/captcha/captcha-image.php
+
       const ip = this.$axios
-        .$get("/api/captcha/check-input-captcha.php?c=" + this.captcha_input)
+        .$get(
+          this.site_url +
+            "captcha/check-input-captcha.php?c=" +
+            this.captcha_input
+        )
+
+        // .$get("/api/captcha/check-input-captcha.php?c=" + this.captcha_input)
         .then(function(response) {
           // handle success
           console.log(response);
         });
-      //  console.log(ip)
+      // console.log(
+      //   "http://angliss-layout.emo.com.hk/captcha/captcha-image.php?c=" +
+      //     this.captcha_input
+      // );
+      // fetch(
+      //   "http://angliss-layout.emo.com.hk/captcha/captcha-image.php?c=" +
+      //     this.captcha_input
+      // ).then(function(response) {
+      //   console.log(response);
+      // });
+      //     // handle success
+      //     console.log(response);
+      //   });
+      // .then(response => response.json())
+      // .then(json => console.log(json));
     }
   },
   components: {
